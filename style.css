@@ -1,0 +1,317 @@
+/*ALINHAMENTO TOTAL DA PÁGINA HTML*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*PRIMEIRA PÁGINA - HTML */
+.contenedorInicio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*IMAGEM DE FUNDO*/
+body {
+    background-image: url(https://images.alphacoders.com/805/thumb-1920-805180.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*BOTÃO PLAY*/
+.botãoiniciar {
+    background-color: rgba(81, 81, 81, 0.558);
+    border: 3.0px solid #000000;
+    width: 5.5vw;
+    height: 2vw;
+    text-align: center;
+    font-size: 1.3vw;
+    border-radius: 1vw;
+    margin-top: -4vw;
+    margin-left: 45.5vw;
+    z-index: 1;
+    transition: transform 0.2s ease-in-out;
+}
+
+/*ZOOM NO BOTÃO PLAY*/
+.botãoiniciar:hover {
+    transform: scale(1.5);
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    .botãoiniciar {
+        width: 15vw;
+        font-size: 3vw;
+        height: 5vw;
+        margin-left: 40vw;
+    }
+}
+
+/*CUSTUMIZAÇÃO DA FONTE NO BOTÃO PLAY*/
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*PRIMEIRA IMAGEM INICIAL*/
+.imagem1 {
+    margin-top: -5.5vw;
+    margin-left: 27vw;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    .imagem1 {
+        width: 80%;
+        margin-top: 25%;
+        margin-left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*SEGUNDA IMAGEM INICIAL*/
+.imagem2 {
+    margin-top: -4vw;
+    margin-left: 28vw;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    .imagem2 {
+        width: 70%;
+        margin-left: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*SEGUNDA PÁGINA - HTML 1*/
+
+/*IMAGEM DE FUNDO*/
+.body2 {
+    background: url(https://images.alphacoders.com/805/thumb-1920-805180.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*TARJA PRETA*/
+header {
+    background: rgba(25, 25, 25, 0.915);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 75px;
+    z-index: -1;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    .header {
+        width: 20%;
+        padding: 10px;
+    }
+}
+
+/*BOTÃO PARA VOLTAR PARA A TELA INCIAL*/
+#botãohome {
+    margin-left: -1%;
+    position: fixed;
+    float: left;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    .botãohome {
+        margin-left: 35%;
+        width: 30%;
+        margin-top: -3px;
+        position: fixed;
+    }
+}
+
+/*CLASS PARA ESTILIZAR OS FILTROS: DEIXAR UM DO LADO DO OUTRO E MOVER ELE*/
+.padrãobox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 90px;
+    margin-left: 400px;
+    float: left;
+    position: fixed;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    .padrãobox {
+        margin-left: 60px;
+        width: 5px;
+        position: fixed;
+    }
+}
+
+/*MODIFICAÇÃO DO TAMANHO DOS BOTÕES FILTRAR E A DISTÂNCIA ENTRE ELES*/
+.filtro {
+    margin-right: 55%;
+    width: 140px;
+    height: 100px;
+    text-align: center;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    .filtro {
+        margin-right: 40px;
+    }
+}
+
+/*COR E TAMANHO DOS SELETORES DENTRO E FORA DOS FILTROS*/
+select {
+    background-color: rgb(81, 255, 0);
+    border-radius: 10px;
+    margin-top: -30px;
+    margin-left: -15px;
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    font-size: 19px;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    select {
+        width: 50px;
+        height: 30px;
+        margin-top: 10px
+    }
+}
+
+/*TAMANHO, COR E LOCAL DOS NOMES DOS FILTROS (GENERO, ESPECIE, VIDA ATUAL)*/
+label {
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    position: fixed;
+    top: 45px;
+
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    label {
+        font-size: 13px;
+        top: 70px;
+        margin-left: -15px;
+    }
+}
+
+/*MOVIMENTAÇÃO DO BOTÃO ORDENAR A-Z*/
+#ordenacao {
+    float: right;
+    width: 7%;
+    height: 30px;
+    top: 40%;
+    right: 90%;
+    position: fixed;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    #ordenacao {
+        float: right;
+        width: 20%;
+        height: 25px;
+        right: 80%;
+        position: fixed
+    }
+}
+
+/*ALTERAÇÃO NOS CARDS*/
+
+/*ALTERAÇÃO NOS PARAGRAFOS DO CARD*/
+p {
+    color: white;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    p {
+        font-size: 3.5vw
+    }
+}
+
+/*ALTERAÇÃO NO NOME DOS PERSONAGENS*/
+h2 {
+    color: white;
+    font-size: 1.2vw;
+    text-align: center;
+    margin-top: -12px;
+    margin-bottom: 5px;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    h2 {
+        font-size: 4vw
+    }
+}
+
+/*TODA A PARTE DA COR E ALINHAMENTO DO TEXTO DO CARD*/
+.caracter {
+    border-radius: 10px;
+    margin: 90px;
+    margin-bottom: -12px;
+    margin-left: 20px;
+    width: 250px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.425);
+    box-shadow: 0 0 18px rgb(255, 255, 255);
+    z-index: -2;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    .caracter {
+        margin-left: 50px;
+    }
+}
+
+
+/*TODA A PARTE DA MOVIMENTAÇÃO DOS CARDS*/
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 95px;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 10px;
+    padding-bottom: 50px;
+}
+
+/*CONFIGURAÇÃO NAS IMAGENS DOS CARDS*/
+#root img {
+    width: 180px;
+    height: 230px;
+    margin: 15px;
+    transform: scaleX(1.2);
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px) {
+    #root img {
+        width: 110px;
+        height: 160px;
+    }
+}
