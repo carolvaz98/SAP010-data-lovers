@@ -14,7 +14,6 @@ const criarcardcaracter = (caracter) => {
 
   const imagem = document.createElement("img");
   imagem.src = caracter.image;
-  imagem.alt = `${caracter.name} thumbnail`;
 
   const nome = document.createElement("h2");
   nome.textContent = caracter.name;
@@ -41,6 +40,7 @@ const criarcardcaracter = (caracter) => {
 // Array com todos os personagens
 const card = document.querySelector("#root");
 
+//adicionar um nó filho a um nó pai 
 data.results.forEach((caracter) => {
   const divPersonagem = criarcardcaracter(caracter);
   card.appendChild(divPersonagem);
@@ -62,15 +62,9 @@ const atualizarListaPersonagens = () => {
     const filtroGeneroValue = genero.value.toLowerCase();
 
     if (
-      (filtroStatusValue === "all" ||
-        filtroStatus.includes(personagemStatus) ||
-        personagemStatus === filtroStatusValue) &&
-      (filtroEspecieValue === "all" ||
-        filtroEspecie.includes(personagemEspecie) ||
-        personagemEspecie === filtroEspecieValue) &&
-      (filtroGeneroValue === "all" ||
-        filtroGenero.includes(personagemGenero) ||
-        personagemGenero === filtroGeneroValue)
+      (filtroStatusValue === "all" || filtroStatus.includes(personagemStatus) || personagemStatus === filtroStatusValue) &&
+      (filtroEspecieValue === "all" || filtroEspecie.includes(personagemEspecie) || personagemEspecie === filtroEspecieValue) &&
+      (filtroGeneroValue === "all" || filtroGenero.includes(personagemGenero) || personagemGenero === filtroGeneroValue)
     ) {
       return true;
     } else {
@@ -87,6 +81,7 @@ const atualizarListaPersonagens = () => {
   const card = document.querySelector("#root");
   card.innerHTML = "";
 
+  //adicionar um nó filho a um nó pai 
   listaOrdenada.forEach((personagem) => {
     const divPersonagem = criarcardcaracter(personagem);
     card.appendChild(divPersonagem);

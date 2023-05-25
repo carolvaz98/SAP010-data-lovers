@@ -35,6 +35,7 @@ export function porcentagem(data) {
   return porcentoArredondado;
 }
 
+//operador de propagação
 export function ordenar(dadosFiltrados, tipoOrdenacao) {
   const novaArray = [...dadosFiltrados];
 
